@@ -47,16 +47,51 @@ function fourth () {
 }
 
 function fifth(){
+    let eleve = document.getElementById("s5e1");
+    console.log(eleve);
 
-    
+    let p = document.createElement("p");
+    p.innerText = ("la note de l'étudiant 1 au semstre 5 est : " + eleve.innerHTML);
+    document.body.appendChild (p)
 }
 
+function six(){
+
+    let eleve = document.getElementById("s2e5");
+    console.log(eleve);
+
+    let p = document.createElement("p");
+    p.innerText = ("la note de l'étudiant 2 au semstre 5 est : " + eleve.innerHTML);
+    document.body.appendChild (p)
+}
+
+
+function seven(){
+
+    let note = document.getElementById("s5e1");
+    let g = parseInt(note.innerText,10)  + 2;
+    note.innerText = (g);
+    note.className = "red";
+    
+
+}
+
+function eight() {
+
+    let text = document.createElement("textarea");
+
+    document.body.appendChild(text);
+}
 function main() {
 
     first();
     second();
     third();
     fourth();
+    fifth();
+    six();
+    seven();
+    eight();
 
 }
 
